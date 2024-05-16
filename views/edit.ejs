@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-APP</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="/css/semantic.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="ui massive menu">
+            <div class="ui container">
+                <div class="header item">
+                    <a href="/" class="link">Home</a>
+                </div>
+                <a class="item">
+                    Blog
+                </a>
+                <a class="item">
+                    Contact
+                </a>
+                <a class="item">
+                    About
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="ui container">
+            <form action="/home/edit/<%- player.id %>" class="ui  form" method="POST">
+                <div class="ui three fields">
+                    <div class="field">
+                        <label for="name" class="ui label green"> Enter The Player Name</label>
+                        <input type="text" name="name" value="<%- player.name %>">
+
+
+                    </div>
+
+                    <div class="field">
+                        <label for="team" class="ui label green"> Enter The Club Name</label>
+                        <input type="text" name="team" value="<%- player.team %>">
+
+
+                    </div>
+                    <div class="field">
+                        <label for="info" class="ui label green"> Enter The Player Info</label>
+                        <input type="text" name="info" value="<%- player.info %>">
+
+
+                    </div>
+
+                </div>
+                <div class="ui fluid field">
+                    <input type="submit" value="submit" class="ui button green fluid">
+                </div>
+            </form>
+
+            <br><br>
+          
+        </div>
+    </div>
+
+
+
+    <script src="/js/semantic.min.js"></script>
+
+</body>
+
+</html>
